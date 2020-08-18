@@ -85,7 +85,9 @@ for photo in img:
                 edi_img = adjust_gamma(org_img, gamma=1.8)
             elif argv.edit_opt == 'darken':
                 edi_img = adjust_gamma(org_img, gamma=0.2)
-     
+            elif argv.edit_opt == 'none':
+                edi_img = org_img
+
         except:
             print("Error: can't edit file", photo)
             exit()

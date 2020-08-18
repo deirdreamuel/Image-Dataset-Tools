@@ -50,7 +50,7 @@ img_split = math.ceil(img_count * (split_ratio))
 
 if argv.pix2pix:
     # make directory for pix2pix train and test
-    file_path = os.path.join(argv.file_dir_A + '_pix2pix')
+    file_path = os.path.join(argv.file_dir_B + '_pix2pix')
     try:
         os.makedirs(os.path.join(file_path, 'test'))
         os.makedirs(os.path.join(file_path, 'train'))
